@@ -19,4 +19,8 @@ export class FaceSnapComponent {
     this.snaps = 6;
     this.imageUrl = 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg';
   }
+
+  onAddSnap(){
+    this.snaps++;
+  };
 }

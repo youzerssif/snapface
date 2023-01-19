@@ -11,16 +11,26 @@ export class FaceSnapComponent {
   createdDate!: Date;
   snaps!: number;
   imageUrl!: string;
+  ohsnap!: string;
 
   ngOnInit() {
     this.title = 'Archibald';
     this.description = 'Mon meilleur ami depuis tout petit !';
     this.createdDate = new Date();
     this.snaps = 6;
+    this.ohsnap = 'Oh snap'
     this.imageUrl = 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg';
   }
 
   onAddSnap(){
-    this.snaps++;
+    if (this.ohsnap==='Oh snap'){
+      this.snaps++;
+      this.ohsnap='Unsnap';
+    }
+    else{
+      this.snaps--;
+      this.ohsnap='Oh snap';
+    };
+    
   };
 }

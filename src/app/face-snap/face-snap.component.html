@@ -3,9 +3,7 @@
     <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     <p>{{ faceSnap.description }}</p>
-    <p>
-        <button (click)="onAddSnap()">{{ohsnap}}</button>
-        🤌 {{ faceSnap.snaps }}
-    </p>
+   
+    <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"><button (click)="onAddSnap()"></button> 🤌 {{ faceSnap.snaps }}</span>
     <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location }}</p>
 </div>

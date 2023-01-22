@@ -11,7 +11,6 @@ export class FaceSnapComponent implements OnInit{
 
   @Input() faceSnap!: FaceSnap;
 
-
   ohsnap!: string;
 
   ngOnInit() {

@@ -30,7 +30,7 @@ export class FaceSnapsService {
       snaps: 0
     }
   ];
-//   getAllSnaps(){
-//     return this.faceSnaps
-//   }
+  getAllFaceSnaps(): FaceSnap[] {
+    return this.faceSnaps;
+}
 }
